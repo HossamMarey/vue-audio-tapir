@@ -1,0 +1,76 @@
+{
+  "name": "vue-audio-tapir-x",
+  "description": "Audio recorder tapir component for Vue.js 3. It enables to record, play and send audio messages to a server.",
+  "version": "1.3.0",
+  "author": {
+    "name": "Thomas Derflinger",
+    "url": "https://www.tderflinger.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "NODE_ENV=production && vue-cli-service build --mode production --target lib --name vue-audio-tapir src/components/TapirWidget.vue"
+  },
+  "keywords": [
+    "vue",
+    "audio",
+    "mp3",
+    "messaging",
+    "microphone",
+    "recording"
+  ],
+  "dependencies": {
+    "core-js": "3.19.1",
+    "lamejs": "1.2.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.36"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "autoprefixer": "^9.8.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  },
+  "main": "dist/vue-audio-tapir.common.js",
+  "browser": "dist/vue-audio-tapir.umd.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tderflinger/vue-audio-tapir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tderflinger/vue-audio-tapir/issues"
+  },
+  "homepage": "https://github.com/tderflinger/vue-audio-tapir",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "@vue/airbnb"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "quotes": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
